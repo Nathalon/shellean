@@ -55,8 +55,7 @@ do
     h ) help; exit;;
     V ) version; exit;;
     i ) ip=$OPTARG;;
-    p ) port=$OPTARG;;
-    
+    p ) port=$OPTARG;;    
   esac
 done
 
