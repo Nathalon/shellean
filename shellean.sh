@@ -43,8 +43,8 @@ version()
   echo -e '\e[5m';
 
   echo '--------------------------------------------------------------------------';
-  echo '-- Writen by Nathalon at (2023-2024), Version: (0.0.1)                    ';
-  echo -e '-- Contact me on Telegram: \e[4mhttps://t.me/braindisassemblue\e[24m   ';
+  echo '-- Writen by Nathalon at (2023-2024), Version: (0.0.1)                  --';
+  echo '-- Contact me on Telegram: https://t.me/braindisassemblue               --';
   echo '--------------------------------------------------------------------------';
 }
 
@@ -56,7 +56,7 @@ do
     V ) version; exit;;
     i ) ip=$OPTARG;;
     p ) port=$OPTARG;;
-
+    
   esac
 done
 
