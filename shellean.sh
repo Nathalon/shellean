@@ -28,7 +28,7 @@ license()
 
 help()
 {
-   echo '-> usage: /bin/bash shellean.sh [-p <protocol> -a <internet protocol address> -d <destination Port>]';
+   echo '-> usage: /bin/bash shellean.sh [-p <protocol> -a <internet protocol address> -d <destination port>]';
    echo '-> options:';
    echo '';
    echo '-l -> Print the GPL license and exit.';
