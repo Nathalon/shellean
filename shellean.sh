@@ -61,20 +61,20 @@ do
 done
 
 if [ -z $ip ];
-then
-  echo '[i] -> You need to specify a Internet Protocol Address';
-  echo '';
+  then
+    echo '[i] -> You need to specify a Internet Protocol Address';
+    echo '';
 
-  help;
-  exit;
+    help;
+    exit;
 
 elif [ -z $port ];
-then
-  echo '[i] -> You need to specify a Port';
-  echo '';
+  then
+    echo '[i] -> You need to specify a Port';
+    echo '';
 
-  help;
-  exit;
+    help;
+    exit;
 
 else
   echo '--------------------------------------------------------------------------';
