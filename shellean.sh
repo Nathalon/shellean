@@ -28,15 +28,15 @@ license()
 
 help()
 {
-   echo '-> usage: /bin/bash shellean.sh [-p <Protocol> -a <Internet Protocol Address> -d <Destination Port>]';
+   echo '-> usage: /bin/bash shellean.sh [-p <protocol> -a <internet protocol address> -d <destination Port>]';
    echo '-> options:';
    echo '';
    echo '-l -> Print the GPL license and exit.';
    echo '-h -> Print help and exit.';
    echo '-V -> Print the software version and exit.';
    echo '-p -> Specify the Protocol.'; 
-   echo '-a -> Specify the Internet Protocol Address to connect to.';
-   echo '-d -> Specify the Destination Port to connect to.';
+   echo '-a -> Specify the Internet Protocol Address to Connect to.';
+   echo '-d -> Specify the Destination Port to Connect to.';
 }
 
 version()
@@ -111,7 +111,7 @@ elif [ -z $address ];
 
     # Much like every house has a unique address for sending mail directly to it, every computer on the internet has its own unique address to communicate with it called an IP address. 
 
-    # An IP address looks like the following 104.26.10.229, 4 sets of digits ranging from 0 - 255 separated by a period.
+    # An IP address looks like the following 107.22.10.119, 4 sets of digits ranging from 0 - 255 separated by a period.
 
 elif [ -z $destination ];
   then
