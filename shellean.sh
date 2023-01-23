@@ -109,6 +109,10 @@ elif [ -z $address ];
     help;
     exit;
 
+    # Much like every house has a unique address for sending mail directly to it, every computer on the internet has its own unique address to communicate with it called an IP address. 
+
+    # An IP address looks like the following 104.26.10.229, 4 sets of digits ranging from 0 - 255 separated by a period.
+
 elif [ -z $remote ];
   then
     echo '[!] -> You need to Specify a Remote Port';
