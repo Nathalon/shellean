@@ -62,7 +62,7 @@ done
 
 if [ -z $ip ];
   then
-    echo '[i] -> You need to specify a Internet Protocol Address';
+    echo '[!] -> You need to specify a Internet Protocol Address';
     echo '';
 
     help;
@@ -70,7 +70,7 @@ if [ -z $ip ];
 
 elif [ -z $port ];
   then
-    echo '[i] -> You need to specify a Port';
+    echo '[!] -> You need to specify a Port';
     echo '';
 
     help;
@@ -89,5 +89,3 @@ else
   echo '[i] Exiting shellean at:' $(date);
   echo '--------------------------------------------------------------------------';
 fi
-
-# Tested on GNU/Kali Linux
