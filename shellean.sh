@@ -62,16 +62,16 @@ if [ -z $ip ];
   then
     echo '[!] -> You need to specify a Internet Protocol Address';
     echo '';
-
     help;
+    
     exit;
 
 elif [ -z $port ];
   then
     echo '[!] -> You need to specify a Port';
     echo '';
-
     help;
+    
     exit;
 
 else
