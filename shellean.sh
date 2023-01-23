@@ -50,11 +50,11 @@ version()
 while getopts 'lhVi:p:' options;
 do
   case $options in
-    l ) license; exit;;
-    h ) help; exit;;
-    V ) version; exit;;
-    i ) ip=$OPTARG;;
-    p ) port=$OPTARG;;    
+    l) license; exit;;
+    h) help; exit;;
+    V) version; exit;;
+    i) ip=$OPTARG;;
+    p) port=$OPTARG;;    
   esac
 done
 
