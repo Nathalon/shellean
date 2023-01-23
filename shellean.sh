@@ -33,7 +33,7 @@ help()
    echo '';
    echo '-l -> Print the GPL license and exit.';
    echo '-h -> Print help and exit.';
-   echo '-V -> Print the software version and exit.';
+   echo '-V -> Print the Software Version and exit.';
    echo '-p -> Specify the Protocol.'; 
    echo '-a -> Specify the Internet Protocol Address to Connect to.';
    echo '-d -> Specify the Destination Port to Connect to.';
