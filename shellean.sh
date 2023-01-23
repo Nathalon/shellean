@@ -41,7 +41,6 @@ help()
 version()
 {
   echo -e '\e[5m';
-
   echo '--------------------------------------------------------------------------';
   echo '-- Writen by Nathalon at (2023-2024), Version: (0.0.1)                  --';
   echo '-- Contact me on Telegram: https://t.me/braindisassemblue               --';
