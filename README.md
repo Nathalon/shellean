@@ -1,7 +1,5 @@
 ## shellean
 
-![Screenshot from 2023-07-19 00-31-00](https://github.com/Nathalon/shellean/assets/69394316/0f035b0e-c18e-41ef-8d75-f8ca21e6d1e7)
-
 **Reverse TCP Shell.**  
 
 **1. Fire up Netcat for incoming connections. `$ nc -lvp 1234`**  
